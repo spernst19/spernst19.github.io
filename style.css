@@ -1,34 +1,72 @@
-/* General page styles */
+/* styles.css - clean, copy into your styles.css file */
+
+/* base */
+:root{
+  --bg: #fd8ade;       /* page background */
+  --card: #ffffff;     /* card background */
+  --accent: #0b6ef6;   /* header / accents */
+  --muted: #16304a;
+  --gap: 1rem;
+  --radius: 10px;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; padding: 0; }
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f377f6;
-  margin: 0;
-  padding: 1rem;
-  color: #222;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--muted);
+  line-height: 1.5;
+  padding: 1.25rem;
 }
 
+/* title */
 h1 {
-  text-align: center;
-  color: #0b6ef6;
+  text-align: left;
+  color: var(--muted);
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+  font-weight: 700;
 }
 
-/* Section cards */
+/* section cards */
 .about, .skills, .projects, .contact {
-  background: white;
-  margin: 1rem auto;
-  padding: 1rem;
-  border-radius: 10px;
-  max-width: 700px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  background: var(--card);
+  max-width: 900px;
+  margin: var(--gap) 0;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(8,20,40,0.06);
 }
 
-/* Specific tweaks per section */
-.about { border-left: 6px solid #0b6ef6; }
-.skills { border-left: 6px solid #f68b0b; }
-.projects { border-left: 6px solid #28a745; }
-.contact { border-left: 6px solid #d63384; }
+/* colored left borders to match the mockup */
+.about { border-left: 6px solid #bfe0ff; }
+.skills { border-left: 6px solid #ffd8b3; }
+.projects { border-left: 6px solid #c8f7c8; }
+.contact { border-left: 6px solid #ffd0ea; }
 
+/* headings inside sections */
+.about h2, .skills h2, .projects h2, .contact h2 {
+  margin: 0 0 .5rem 0;
+  font-size: 1.4rem;
+  color: #12243a;
+}
+
+/* lists */
 .skills ul {
-  list-style: square;
-  padding-left: 1.5rem;
+  padding-left: 1.25rem;
+}
+
+/* smaller screens: keep everything stacked */
+@media (min-width: 900px) {
+  /* optionally you can split into two columns:
+     .about + .skills side-by-side, projects full width, contact full width */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-width: 900px;
+  }
+  .projects, .contact { grid-column: 1 / -1; }
 }
