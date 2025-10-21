@@ -79,3 +79,7 @@ h1 {
  background: white; /* pick a color */
  border-radius: 25%;
 }
+.project img {
+ width: 100%;
+ border-radius: 25%;
+}
