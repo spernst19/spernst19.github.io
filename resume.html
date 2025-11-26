@@ -1,0 +1,259 @@
+<!-- this HTML content was created by ChatGPT -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sydney Ernst — Resume</title>
+  <style>
+    :root{
+      --accent:#0b66c2;
+      --muted:#666;
+      --bg:#f8f9fb;
+      --card:#ffffff;
+      --max-width:900px;
+      --gap:18px;
+      --radius:10px;
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg),#fff);
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:28px;
+      color:#222;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    .resume {
+      width:100%;
+      max-width:var(--max-width);
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:0 8px 30px rgba(20,30,50,0.08);
+      padding:28px;
+      box-sizing:border-box;
+    }
+
+    header{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      border-bottom:2px solid #eef3f8;
+      padding-bottom:16px;
+      margin-bottom:18px;
+    }
+
+    .name {
+      font-size:1.6rem;
+      font-weight:700;
+      color:var(--accent);
+      letter-spacing:0.2px;
+    }
+
+    .contact {
+      font-size:0.95rem;
+      color:var(--muted);
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+
+    .contact a { color:var(--muted); text-decoration:none; }
+    .contact a:hover { text-decoration:underline; }
+
+    .grid {
+      display:grid;
+      grid-template-columns: 1fr 2fr;
+      gap:var(--gap);
+    }
+
+    /* On small screens, make a single column */
+    @media (max-width:760px){
+      .grid { grid-template-columns: 1fr; }
+      header{flex-direction:column;align-items:flex-start}
+    }
+
+    .card {
+      background:transparent;
+      padding:6px 4px;
+    }
+
+    .section-title{
+      font-weight:700;
+      color:#1a2a42;
+      margin-bottom:8px;
+      font-size:0.98rem;
+    }
+
+    .box {
+      padding:10px 14px;
+      border-radius:8px;
+      background:linear-gradient(180deg, rgba(11,102,194,0.03), rgba(11,102,194,0.01));
+      border:1px solid #eef6ff;
+    }
+
+    .left .box { min-height: 120px; }
+
+    .edu-item, .exp-item {
+      margin-bottom:12px;
+    }
+
+    .muted { color:var(--muted); font-size:0.95rem; }
+
+    .role { font-weight:600; color:#0f2440; }
+    .org { font-weight:600; }
+    .meta { color:var(--muted); font-size:0.92rem; }
+
+    ul.simple { padding-left:1rem; margin:6px 0 12px 0; }
+    ul.simple li { margin-bottom:6px; line-height:1.35; }
+
+    footer {
+      margin-top:20px;
+      border-top:1px dashed #eef3f8;
+      padding-top:12px;
+      font-size:0.9rem;
+      color:var(--muted);
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    /* small helper */
+    .pdf-link { font-size:0.95rem; text-decoration:none; color:var(--accent); border-bottom:1px dashed rgba(11,102,194,0.25); }
+  </style>
+</head>
+<body>
+  <main class="resume" role="main" aria-label="Resume for Sydney Ernst">
+    <header>
+      <div>
+        <div class="name">Sydney Ernst</div>
+        <div class="muted">Bachelor of Science — Computer Science (expected May 2028)</div>
+      </div>
+
+      <div class="contact" aria-hidden="false">
+        <span>Columbia, SC</span>
+        <span>•</span>
+        <span><a href="mailto:spernst@email.sc.edu">spernst@email.sc.edu</a></span>
+        <span>•</span>
+        <span><a href="#" title="LinkedIn profile (update link)">LinkedIn</a></span>
+      </div>
+    </header>
+
+    <div class="grid" role="region" aria-label="resume content">
+      <!-- LEFT COLUMN -->
+      <aside class="left card" aria-labelledby="left-column">
+        <div id="left-column" class="box">
+          <div class="section">
+            <div class="section-title">Education</div>
+            <div class="edu-item">
+              <div class="org">University of South Carolina — College of Engineering and Computing</div>
+              <div class="meta">Bachelor of Science — Computer Science · <span class="muted">Expected May 2028</span></div>
+              <div class="muted">GPA: 3.4</div>
+            </div>
+          </div>
+
+          <div class="section" style="margin-top:10px">
+            <div class="section-title">Awards &amp; Certifications</div>
+            <ul class="simple">
+              <li>Part 107 Drone Pilot License</li>
+              <li>OSHA 30-Hour</li>
+              <li>Six Sigma Yellow Belt</li>
+              <li>Palmetto Fellows Scholarship</li>
+            </ul>
+          </div>
+
+          <div class="section" style="margin-top:10px">
+            <div class="section-title">Skills</div>
+            <ul class="simple">
+              <li>Python, HTML/CSS, Java, JavaScript, Git, AutoCAD</li>
+              <li>Conflict Resolution, Critical Thinking, Communication, Leadership</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <!-- RIGHT COLUMN -->
+      <section class="right card" aria-labelledby="right-column">
+        <div id="right-column" class="box">
+          <div class="section">
+            <div class="section-title">Experience</div>
+
+            <div class="exp-item">
+              <div class="role">Soccer Referee</div>
+              <div class="org">Sumter Parks and Recreation Department — Sports &amp; Recreation</div>
+              <div class="meta">August 2021 – Present · Sumter, SC</div>
+              <ul class="simple">
+                <li>Exercised leadership and authority by managing games, enforcing rules, and ensuring fair play.</li>
+                <li>Applied critical thinking and quick decision-making under pressure to resolve disputes and maintain order.</li>
+                <li>Communicated effectively with players, coaches, and spectators to create a safe, respectful environment.</li>
+              </ul>
+            </div>
+
+            <div class="exp-item">
+              <div class="role">Cashier</div>
+              <div class="org">Lowe’s Home Improvement — Customer Service</div>
+              <div class="meta">June 2025 – July 2025 · Sumter, SC</div>
+              <ul class="simple">
+                <li>Answered product questions and resolved customer concerns promptly.</li>
+                <li>Provided fast, friendly, and accurate checkout service to 100+ customers per shift.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section" style="margin-top:8px">
+            <div class="section-title">Leadership</div>
+            <div class="exp-item">
+              <div class="role">CHI OMEGA — Bid Day Team</div>
+              <div class="meta">April 2025 – August 2025</div>
+              <ul class="simple">
+                <li>Assisted with event logistics, decorations, and coordination for smooth operations.</li>
+              </ul>
+            </div>
+
+            <div class="exp-item">
+              <div class="role">Honors Orchestra — Cello Section Leader</div>
+              <div class="meta">August 2021 – May 2024</div>
+              <ul class="simple">
+                <li>Provided guidance and mentorship to 13 section members and balanced rehearsal schedules.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section" style="margin-top:8px">
+            <div class="section-title">Service</div>
+            <div class="exp-item">
+              <div class="role">Volunteer — Feed My Starving Children</div>
+              <div class="meta">June 2019 – Present</div>
+              <ul class="simple">
+                <li>Participated in events assembling nutritious meals; contributed to >500 meals packed.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div>
+        <a class="pdf-link" href="files/Sydney Ernst Resume.pdf" target="_blank" rel="noopener">
+          View PDF version
+        </a>
+        <span style="margin-left:10px;color:var(--muted)">|</span>
+        <a class="pdf-link" href="resume.html">View HTML version</a>
+      </div>
+
+      <div class="muted">Content created with help from ChatGPT</div>
+    </footer>
+  </main>
+</body>
+</html>
